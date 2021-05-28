@@ -24,16 +24,19 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Inherit some common Pixel Experience stuff
 # $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/dot/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_GAPPS_ARCH := arm64
 IS_PHONE := true
+
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 PRODUCT_BRAND := Sony
 PRODUCT_DEVICE := pdx206
 PRODUCT_MANUFACTURER := Sony
 
-PRODUCT_NAME := lineage_pdx206
+PRODUCT_NAME := dot_pdx206
 PRODUCT_MODEL := Xperia 5 II
 
 
@@ -42,5 +45,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-sonymobile
 TARGET_VENDOR_PRODUCT_NAME := pdx206
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="Sony/pdx206/pdx206 10 QKQ1.200108.002 1:user release-keys"
-BUILD_FINGERPRINT := Sony/pdx206/pdx206:10/QKQ1.200108.002/1:user/release-keys
+    PRIVATE_BUILD_DESC="Sony/XQ-AS72/XQ-AS72 11 58.1.A.5.159 058001A005015901542256272 user release-keys"
+BUILD_FINGERPRINT := Sony/XQ-AS72/XQ-AS72:11/58.1.A.5.159/058001A005015901542256272:user/release-keys
