@@ -26,7 +26,8 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, vendor/dot/config/common.mk)
-TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_BOOT_ANIMATION_RES := 1080
+WITH_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
 IS_PHONE := true
 
