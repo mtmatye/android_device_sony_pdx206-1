@@ -24,7 +24,9 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Inherit some common Pixel Experience stuff
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1440
+
+# GAPPS
+WITH_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
 IS_PHONE := true
 

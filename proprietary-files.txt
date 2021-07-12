@@ -1,5 +1,4 @@
-# Stock package version: Sony/pdx206/pdx206:10/QKQ1.200108.002/1:user/release-keys
-
+# Stock package version: Sony/pdx206/pdx206:11/RKQ1.200928.002/1:user/release-keys
 
 # ANT+
 system_ext/lib/com.qualcomm.qti.ant@1.0.so
