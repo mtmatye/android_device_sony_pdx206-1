@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bootleg_pdx206.mk
+    $(LOCAL_DIR)/evolution_pdx206.mk
 
 COMMON_LUNCH_CHOICES := \
-    bootleg_pdx206-user \
-    bootleg_pdx206-userdebug \
-    bootleg_pdx206-eng
+    evolution_pdx206-user \
+    evolution_pdx206-userdebug \
+    evolution_pdx206-eng

@@ -22,8 +22,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from common.mk
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit some common Bootleggers stuff
-$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
+# Inherit some common Evolution X stuff
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
@@ -36,7 +36,7 @@ PRODUCT_BRAND := Sony
 PRODUCT_DEVICE := pdx206
 PRODUCT_MANUFACTURER := Sony
 
-PRODUCT_NAME := bootleg_pdx206
+PRODUCT_NAME := evolution_pdx206
 PRODUCT_MODEL := Xperia 5 II
 
 
