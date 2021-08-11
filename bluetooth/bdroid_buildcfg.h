@@ -21,13 +21,22 @@
 #define _BDROID_BUILDCFG_H
 
 #define BTM_DEF_LOCAL_NAME "Xperia 5 II"
+
 // Disables read remote device feature
-#define MAX_ACL_CONNECTIONS   16
-#define MAX_L2CAP_CHANNELS    32
-#define BLE_VND_INCLUDED   TRUE
-#define GATT_MAX_PHY_CHANNEL  10
+#define MAX_ACL_CONNECTIONS 16
+#define MAX_L2CAP_CHANNELS 32
+#define BLE_VND_INCLUDED TRUE
+#define GATT_MAX_PHY_CHANNEL 10
+
 // skips conn update at conn completion
 #define BT_CLEAN_TURN_ON_DISABLED 1
 
+// Wide-band speech support
+#define BTM_WBS_INCLUDED TRUE
+#define BTIF_HF_WBS_PREFERRED TRUE
+
+// QCOM power management workaround
+#define BT_CLEAN_TURN_ON_DISABLED TRUE
 #define AVDT_NUM_SEPS 35
+
 #endif

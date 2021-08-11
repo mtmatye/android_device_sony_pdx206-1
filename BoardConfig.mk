@@ -15,7 +15,8 @@
 # limitations under the License.
 #
 
--include device/sony/edo-common/PlatformConfig.mk
+#Include PlatformConfig.mk from edo-common  
+include device/sony/pdx206/PlatformConfig.mk
 
 DEVICE_PATH := device/sony/pdx206
 
@@ -62,4 +63,4 @@ TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Inherit from the proprietary version
--include vendor/sony/pdx206/BoardConfigVendor.mk
+include vendor/sony/pdx206/BoardConfigVendor.mk
