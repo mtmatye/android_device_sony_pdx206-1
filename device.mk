@@ -24,8 +24,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/sony/pdx206/pdx206-vendor.mk)
 
-# Inherit from common
-$(call inherit-product, device/sony/edo-common/edo.mk)
+# Include platform.mk
+$(call inherit-product, device/sony/pdx206/platform.mk)
 
 # Custom sony stuff
 # Note: closed sourced
@@ -48,7 +48,3 @@ PRODUCT_COPY_FILES += \
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages
-
-# Device specific overlay
-DEVICE_PACKAGE_OVERLAYS += \
-     $(LOCAL_PATH)/overlay-pe

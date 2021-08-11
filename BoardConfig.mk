@@ -15,7 +15,8 @@
 # limitations under the License.
 #
 
--include device/sony/edo-common/PlatformConfig.mk
+#Include PlatformConfig.mk from edo-common  
+include device/sony/pdx206/PlatformConfig.mk
 
 DEVICE_PATH := device/sony/pdx206
 
@@ -29,6 +30,7 @@ TARGET_SCREEN_DENSITY := 417
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 loop.max_part=7 cgroup.memory=nokmem,nosocket reboot=panic_warm buildproduct=pdx206 buildid=EDO-1.0.1-201109-1152 zram.backend=z3fold
+BOARD_KERNEL_CMDLINE += printk.devkmsg=on androidboot.fstab_suffix=qcom
 BOARD_KERNEL_CMDLINE += androidboot.product.hardware.sku=ds
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
@@ -61,4 +63,4 @@ TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Inherit from the proprietary version
--include vendor/sony/pdx206/BoardConfigVendor.mk
+include vendor/sony/pdx206/BoardConfigVendor.mk
