@@ -22,22 +22,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device.mk
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-<<<<<<< HEAD:bootleg_pdx206.mk
 # Inherit some common Bootleggers stuff
 $(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 
-=======
-# Inherit some common dotOS stuff
-$(call inherit-product, vendor/dot/config/common.mk)
-
 # Boot Animation
->>>>>>> dot-11:dot_pdx206.mk
 TARGET_BOOT_ANIMATION_RES := 1080
-
-# GAPPS
-WITH_GAPPS := true
-TARGET_GAPPS_ARCH := arm64
-IS_PHONE := true
 
 # Face-Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
@@ -49,11 +38,7 @@ PRODUCT_BRAND := Sony
 PRODUCT_DEVICE := pdx206
 PRODUCT_MANUFACTURER := Sony
 
-<<<<<<< HEAD:bootleg_pdx206.mk
 PRODUCT_NAME := bootleg_pdx206
-=======
-PRODUCT_NAME := dot_pdx206
->>>>>>> dot-11:dot_pdx206.mk
 PRODUCT_MODEL := Xperia 5 II
 
 PRODUCT_GMS_CLIENTID_BASE := android-sonymobile
