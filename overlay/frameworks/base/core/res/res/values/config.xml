@@ -415,4 +415,10 @@
 
      <!-- Whether device supports double tap to wake -->
      <bool name="config_supportDoubleTapWake">false</bool>
+
+    <!-- The OEM specified sensor type for the lift trigger to launch the camera app. -->
+    <integer name="config_cameraLiftTriggerSensorType">66536</integer>
+    <!-- The OEM specified sensor string type for the gesture to launch camera app, this value
+        must match the value of config_cameraLiftTriggerSensorType in OEM's HAL -->
+    <string translatable="false" name="config_cameraLiftTriggerSensorStringType">com.sonymobile.sensor.camera_lift_trigger</string>
 </resources>
