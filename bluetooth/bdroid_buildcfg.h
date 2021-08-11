@@ -29,7 +29,7 @@
 #define GATT_MAX_PHY_CHANNEL 10
 
 // skips conn update at conn completion
-#define BT_CLEAN_TURN_ON_DISABLED 1
+// #define BT_CLEAN_TURN_ON_DISABLED 1
 
 // Wide-band speech support
 #define BTM_WBS_INCLUDED TRUE
