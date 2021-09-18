@@ -22,8 +22,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device.mk
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit some common dotOS stuff
-$(call inherit-product, vendor/dot/config/common.mk)
+# Inherit some common Project 404 stuff
+$(call inherit-product, vendor/404/config/common.mk)
 
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -43,7 +43,7 @@ PRODUCT_BRAND := Sony
 PRODUCT_DEVICE := pdx206
 PRODUCT_MANUFACTURER := Sony
 
-PRODUCT_NAME := dot_pdx206
+PRODUCT_NAME := p404_pdx206
 PRODUCT_MODEL := Xperia 5 II
 
 PRODUCT_GMS_CLIENTID_BASE := android-sonymobile
