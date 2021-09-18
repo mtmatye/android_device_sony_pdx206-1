@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Inherit some common Project 404 stuff
-$(call inherit-product, vendor/404/config/common.mk)
+$(call inherit-product, vendor/404/configs/common.mk)
 
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
