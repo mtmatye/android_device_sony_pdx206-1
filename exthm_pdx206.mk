@@ -25,8 +25,9 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 $(call inherit-product, vendor/exthm/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
-IS_PHONE := true
+
+# Face-Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 PRODUCT_BRAND := Sony
 PRODUCT_DEVICE := pdx206
