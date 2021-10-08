@@ -37,7 +37,10 @@ PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 
 # Using Sony Vendor Camera
 PRODUCT_PACKAGES += \
-    SemcCameraUI
+    SemcCameraUI \
+    SomcColorGamut \
+    DisplayBooster \
+    SwiqiSystemService
 
 # DTBO
 LOCAL_DTB := $(LOCAL_PATH)/prebuilt/dtb.img

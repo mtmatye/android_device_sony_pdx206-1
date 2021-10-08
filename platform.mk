@@ -489,3 +489,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Gatekeeper
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.gatekeeper.disable_spu=true
+# Sony specific settings
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/privapp-permissions-sony.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-sony.xml
