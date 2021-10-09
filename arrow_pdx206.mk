@@ -22,16 +22,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device.mk
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit some common dotOS stuff
-$(call inherit-product, vendor/dot/config/common.mk)
+# Inherit some common Arrow OS stuff
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # GAPPS
-WITH_GAPPS := true
-TARGET_GAPPS_ARCH := arm64
-IS_PHONE := true
+# WITH_GAPPS := true
+# TARGET_GAPPS_ARCH := arm64
+# IS_PHONE := true
 
 # Face-Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
@@ -43,7 +43,7 @@ PRODUCT_BRAND := Sony
 PRODUCT_DEVICE := pdx206
 PRODUCT_MANUFACTURER := Sony
 
-PRODUCT_NAME := dot_pdx206
+PRODUCT_NAME := arrow_pdx206
 PRODUCT_MODEL := Xperia 5 II
 
 PRODUCT_GMS_CLIENTID_BASE := android-sonymobile

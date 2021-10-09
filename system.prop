@@ -83,6 +83,7 @@ ro.vendor.qti.va_aosp.support=1
 
 # Zygote
 persist.device_config.runtime_native.usap_pool_enabled=true
+
 # Gamut
 ro.sys.colorgamut.supported=true
 #persist.sys.colorgamut.mode=3

@@ -35,7 +35,7 @@ $(call inherit-product, device/sony/pdx206/platform.mk)
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 
-# Using Sony Vendor Camera
+# Using Sony Vendor Camera & Gamut
 PRODUCT_PACKAGES += \
     SemcCameraUI \
     SomcColorGamut \
